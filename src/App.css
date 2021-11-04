@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.canvas {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color:rgb(255, 243, 202);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.container {
+  min-width: 300px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shape_1 {
+  position: relative;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  background-color:rgb(246, 178, 101)
+}
+
+.shape_2 {
+  position: relative;
+  margin: auto;
+  background-color:rgb(41, 39, 71);
+  overflow: hidden;
+  height: 0;
+  display: flex;
+}
+
+.sun {
+  width: 50px;height: 50px;
+  position: absolute;
+  border-radius:50%;
+  background-color: rgb(235, 223, 116);
+}
+
+.mountains {
+  width: 100%;
+  height: 140px;
+ position: relative;
+}
+
+.mountains .mount_1 {
+
+  position: absolute;
+
+  width: 0; 
+  height: 0; 
+  border-left: 150px solid transparent;
+  border-right: 200px solid transparent;
+  
+  border-bottom: 140px solid rgb(78, 149, 36);
+
+
+  left : -100px;
+}
+
+.mountains .mount_2 {
+
+  position: absolute;
+ 
+  width: 0; 
+  height: 0; 
+  border-left: 150px solid transparent;
+  border-right: 200px solid transparent;
+  
+  border-bottom: 140px solid rgb(42, 100, 9);
+
+  left: 30%;
+
+}
+
+
+.shape_1_1 {
+  position: relative;
+  width: 250px;
+  height: 0px;
+  background-color:rgb(104, 190, 118);
+  position: absolute;
+  top: 0;
+}
+
+.shape_2_2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  background-color:rgb(187, 249, 255);
+  overflow: hidden;
+  height: 0;
+  display: flex;
+}
+
+.phone_btn {
+  opacity: 0;
+  width: 30px;height: 30px;
+  margin: auto;
+  border-radius:50%;
+  background-color:rgb(255, 110, 110);
+}
+
+.notch {
+  position: absolute;
+  top : 0;
+  position: relative;
+  margin: auto;
+}
+
+.speaker {
+  width : 0px; 
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
 }
